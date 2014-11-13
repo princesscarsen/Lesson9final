@@ -17,20 +17,20 @@ public class ShapeMaker {
         }
         if(choice==1)
         {
-            w=k.readDouble("Enter width of rectangle");
-            h=k.readDouble("Enter height of rectangle");
+            w=k.readDouble("Enter width of rectangle: ");
+            h=k.readDouble("Enter height of rectangle: ");
             s1=new Rect(0,0,w,h);
             
         }
         else
         {
-            r=k.readDouble("Enter the circles radius");
+            r=k.readDouble("Enter the circles radius: ");
             s1=new Circle(0,0,r);
         }
         while(true){
             s1.draw(p);
-            x=k.readDouble("New x");
-            y=k.readDouble("New y");
+            x=k.readDouble("New x: ");
+            y=k.readDouble("New y: ");
             p.setColor(Color.white);
             s1.draw(p);
             s1.move(x,y);
